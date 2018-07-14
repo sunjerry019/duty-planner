@@ -1,0 +1,32 @@
+Database
+
+Users
+-----
+1) ID
+2) Display Name
+3) Username
+4) Password
+5) User type
+6) Duty start date
+7) Duty end date
+
+Exemptions
+----------
+1) ID
+2) User
+3) Start date
+4) End date
+5) Type
+
+Duty Personnel
+--------------
+1) ID
+2) Duty Personnel
+3) Date
+4) IsManual
+
+Configuration
+-------------
+1) Weekday points
+2) Friday points
+3) Weekend points
