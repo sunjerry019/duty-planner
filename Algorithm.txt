@@ -1,0 +1,34 @@
+Duty planning algorithm
+
+For each duty personnel:
+Default: Weekday duty = 1 point, Friday duty = 1.5 points, Weekend/public holiday duty = 2 points Values are adjustable
+
+The duty planner will work based on a point per time period system. I.e. based on the above point values there are 9.5 points worth of duty to be done per week (assuming no public holidays). Assuming there are 5 people liable to do duty in that time period, the general idea is that the system will try to ensure each person does 1.9 points worth of duty in that week.
+
+To decide on the duty personnel for each particular day, the system draws up a list of people eligible for duty for that day (duty eligible personnel). Personnel on personal off/leave (including half day offs/leaves)/MC/MA will not be considered for duty. Personnel who just returned from MC will not be considered for duty on their first day back from MC. Personnel with off/leave of more than 3.5 weekdays in a week (touching a weekend) will not be considered for duty on the (weekend[s]) the off/leave touches.
+
+The system will calculate the average point per duty eligibe day for each duty eligible personnel. For newly posted in personnel, the system will assign them the average point per duty eligible day of the person with the lowest average points for duty assignment purposes until they have done 2 duties so that they have enough points to calculate the average point per day meaningfully. If there is a group of 5 or more newly posted in personnel, the entire group will start with 0 average point/day. 
+
+The system will take 15% of the duty eligible personnel (rounded up to the next integer) with the lowest average point/day and consider them in a duty pool. If there is a tie at the cut off point, all with tied points at the point threshold will be entered into the duty pool.
+
+Within the duty pool:
+If there is only 1 person in the pool, he is automatically selected as the duty personnel for the day.
+Else, the duty personnel for the day will be selected by computing a "desirability index". The higher the person's desirability index, the more suitable the person is for duty for the day.
+
+The desirability index is calculated as follows:
+The mean and standard deviation of all personnel's average point/day is calculated. The number of standard deviations away from the mean of each personnel in the duty pool is calculated and multiplied by 10. This is the starting desirability index.
+
+Adjustments are then made as follows [values and items TBC]:
+Just did duty the previous day: -10
+Did duty 2 days ago: -5
+Highest number of weekend duties per duty eligible day (weekend duties only): -1.25
+Lowest number of weekend duties per duty eligible day (weekend duties only): +1.25
+Highest number of weekday duties per duty eligible day (weekday duties only): -0.5
+Lowest number of weekday duties per duty eligible day (weekday duties only): +0.5
+Highest number of Friday duties per duty eligible day (Friday duties only): -0.75
+Lowest number of Friday duties per duty eligible day (Friday duties only): +0.75
+<more to be added>
+
+Just because I think it is a good idea to introduce some slight randomness into the system, each person's desirability index will also be adjusted randomly from -0.4 to + 0.4. This also serves to break any ties that may occur.
+
+After all adjustments are added to the desirability index, the person with the highest desirability index will be selected for duties that day.
