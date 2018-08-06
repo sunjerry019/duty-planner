@@ -1,0 +1,16 @@
+!!!OUTDATED!!!
+DO NOT REFER TO THIS FILE UNTIL FURTHER NOTICE
+
+Objects
+
+Day Object:
+public constructor - runs duty sig determination algorithm and sets duty pers, returns duty pers
+public manualSet - manually sets duty pers for the day, returns 1 for success and 0 for failure
+public getDutySig - returns duty pers
+public getAutomatic - returns true if duty pers was automatically determined, false if manual
+private date
+private dutyPers
+private isManual
+
+User object:
+public 

@@ -1,16 +1,18 @@
 Database
 
-Users
+All dates are strings in YYYY-MM-DD
+
+users
 -----
 1) ID
 2) Display Name
 3) Username
 4) Password
-5) User type
+5) User type (1 for normal user, 2 for admin)
 6) Duty start date
 7) Duty end date
 
-Exemptions
+exemptions
 ----------
 1) ID
 2) User
@@ -18,15 +20,9 @@ Exemptions
 4) End date
 5) Type
 
-Duty Personnel
+dutyPersonnel
 --------------
-1) ID
-2) Duty Personnel
-3) Date
-4) IsManual
-
-Configuration
--------------
-1) Weekday points
-2) Friday points
-3) Weekend points
+1) id
+2) userOnDuty
+3) date
+4) isManual (1 for true, 0 for false)
