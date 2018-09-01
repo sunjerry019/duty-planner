@@ -1,5 +1,2 @@
-html    { font-family: "Roboto", sans-serif; background-color: #403B3D; transition: 0.2s ease; }
+html    { font-family: "Roboto", sans-serif; transition: 0.2s ease; }
 h1      { font-family: "Source Sans Pro", sans-serif; }
-
-body.start  { max-width: 500px; max-height: 500px; background-color: white; padding: 10px; border: 10px solid #D46F5C;
-            text-align: center; position: absolute; margin: auto; top: 0; bottom: 0; right: 0; left: 0; }
