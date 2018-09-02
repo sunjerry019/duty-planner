@@ -12,7 +12,7 @@ var modallen = {
 
 $(document).ready(function(){
 	$(".dropdown-trigger").dropdown();
-	$('.modal').modal({endingTop: '50%'});
+	$('.modal').modal({startingTop: '30%', endingTop: '50%'});
 	
 	/* Event Listeners */
 	$('.preventDefault').click(function(e){ e. preventDefault(); })
@@ -20,7 +20,8 @@ $(document).ready(function(){
 		e.preventDefault();
 		e.stopPropagation();
 		
-		pretext = "<p>Copy this URL into your favourite calendar app and start syncing:</p>"; 
+		pretext = this.dataset.pretext;
+		pretext += "<p>Copy this URL into your favourite calendar app and start syncing:</p>"; 
 		modallen.alert($(this).html() + " Calendar", pretext + "<div class='cal_link code center'>" + this.href + "</div>");
 	})
 	/* /Event Listeners */

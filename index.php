@@ -54,11 +54,11 @@
 					<div class="card-content white-text">
 						<span class="card-title">Sync iCal</span>
 						<p>You may use the links below for syncing with Google Calendar/Outlook etc.</p>
-						<p class="red-text text-lighten-1">Please only share the Read-only version with others.</p>
+						<p class="red-text text-lighten-1">Please only share the public version with others. Sharing the private calendar will give read-write permissions to everyone.</p>
 					</div>
 					<div class="card-action">
-						<a href="<?php echo $calendar["ro"] ?>" class="ical">Read Only</a>
-						<a href="<?php echo $calendar["rw"] ?>" class="ical">Read Write</a>
+						<a href="<?php echo $calendar["ro"] ?>" class="ical" data-pretext="<p class='green-text text-darken-2'>This calendar has read-only rights.</p>">Public</a>
+						<a href="<?php echo $calendar["rw"] ?>" class="ical" data-pretext="<p class='red-text'>This calendar has read-write rights.</p>">Private</a>
 					</div>
 				</div>
 			</div>
