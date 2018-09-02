@@ -6,10 +6,14 @@
 	 **************************************************/
 
 	date_default_timezone_set('Asia/Singapore');
-
+	
+	// algorithm
 	require("User.inc.php");
 	require("Day.inc.php");
 	require("DutyPool.inc.php");
+	
+	// aesthetics
+	require("colours.inc.php");
 	require("displayFunctions.inc.php");
 
 	const DB_PATH = "sqlite:database.db";

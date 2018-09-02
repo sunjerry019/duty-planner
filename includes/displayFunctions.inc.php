@@ -1,8 +1,13 @@
 <?php			
 	function dutySummary($date)
 	{
+		$output = array();
+			
 		$day = new Day($date);
 		$dutypersonnel = $day->setDutyPersonnel()->getDisplayName();
-		return $dutypersonnel;
+		
+		array_push($output, "");
+		
+		return join('', $output);;
 	}
 ?>
