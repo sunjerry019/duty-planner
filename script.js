@@ -11,8 +11,11 @@ var modallen = {
 
 
 $(document).ready(function(){
+	/* initializations */
 	$(".dropdown-trigger").dropdown();
 	$('.modal').modal({startingTop: '30%', endingTop: '50%'});
+	$('.tabs').tabs();
+	/* /initializations */
 	
 	/* Event Listeners */
 	$('.preventDefault').click(function(e){ e. preventDefault(); })

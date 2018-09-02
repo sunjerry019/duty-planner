@@ -10,6 +10,7 @@
 	require("User.inc.php");
 	require("Day.inc.php");
 	require("DutyPool.inc.php");
+	require("displayFunctions.inc.php");
 
 	const DB_PATH = "sqlite:database.db";
 	const WEEKDAY_POINTS = 1;
