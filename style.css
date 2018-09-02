@@ -3,3 +3,8 @@
 nav .brand-logo.center { font-family: 'Hanalei Fill', "Roboto", sans-serif; }
 .modal		{ transform: translateY(-50%) !important; }
 .cal_link 	{ background-color: #ddd; padding: 10px; }
+
+#dutypersonnel .card .card-content#dp-names { padding-bottom: 10px; }
+.dp-profile 			{ width: 10vw; height: 10vw; max-width: 50px; max-height: 50px; border-radius:50%; position: relative; }
+.dp-profile .initial	{ position: absolute; top: 50%; transform: translateY(-50%); text-align: center; left: 0; right: 0; font-size: 200%; font-weight: 300; font-family: "Nunito", sans-serif; }	
+.dp-name				{ font-size: 150%; }

@@ -6,7 +6,7 @@
 		{
 			if(idealTextColour(stringToColorCode(substr($farbe, 1, 3))) == "#000000") $farbe = RGBToHex(getOpposite($farbe));
 			
-			while(idealTextColour($farbe) == "#000000") $farbe = changeColorLuminance($farbe, - 0.05);
+			while(idealTextColour($farbe) == "#000000") $farbe = changeColorLuminance($farbe, -0.05);
 		}
 		return $farbe;
 	}

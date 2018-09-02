@@ -1,0 +1,1 @@
+Change the hashing algorithm for producing the colour based on the text

@@ -19,7 +19,7 @@
 		<title>Duty Planner</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Hanalei+Fill&text=DutyPlanner" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Material+Icons|Nunito:300" rel="stylesheet">
 
 		<!-- Materialize CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -80,7 +80,7 @@
 								<li class="tab"><a href="#duty-tomorrow">Tomorrow</a></li>
 							</ul>
 						</div>
-						<div class="card-content grey lighten-3">
+						<div class="card-content grey lighten-3" id="dp-names">
 							<!-- https://stackoverflow.com/a/44059132 -->
 							<div id="duty-yesterday"><?php echo dutySummary($today->modify('-1 days')->format("Y-m-d")) ?></div>
 							<div id="duty-today"><?php echo dutySummary($today->modify('+1 days')->format("Y-m-d")) ?></div>
