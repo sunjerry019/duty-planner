@@ -1,2 +1,5 @@
-html    { font-family: "Roboto", sans-serif; transition: 0.2s ease; }
-h1      { font-family: "Source Sans Pro", sans-serif; }
+.code	{ font-family: "Roboto Mono", monospace; font-size: smaller; }
+
+nav .brand-logo.center { font-family: 'Hanalei Fill', "Roboto", sans-serif; }
+.modal		{ transform: translateY(-50%) !important; }
+.cal_link 	{ background-color: #ddd; padding: 10px; }
