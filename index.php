@@ -1,4 +1,4 @@
-<?php require("library.inc.php"); ?>
+<?php require("includes/library.inc.php"); ?>
 <?php 
 	$doc_root 	= "/duty-planner";
 	$user		= "35SCE";
