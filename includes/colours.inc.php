@@ -179,7 +179,7 @@
 	function changeColorLuminance($hex, $lum)
 	{
 		// validate hex string
-		preg_replace('/[^0-9a-f]/gi', '', $hex);
+		preg_replace('/[^0-9a-f]/i', '', $hex);
 		if(strlen($hex) < 6) $hex = $hex[0] + $hex[0] + $hex[1] + $hex[1] + $hex[2] + $hex[2];
 		$dlum = $lum ?? 0;
 		
