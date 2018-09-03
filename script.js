@@ -15,6 +15,7 @@ $(document).ready(function(){
 	$(".dropdown-trigger").dropdown();
 	$('.modal').modal({startingTop: '30%', endingTop: '50%'});
 	$('.tabs').tabs();
+	$('.sidenav').sidenav();
 	/* /initializations */
 	
 	/* Event Listeners */

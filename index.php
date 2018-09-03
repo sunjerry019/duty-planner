@@ -31,6 +31,7 @@
 	</head>
 
 	<body>
+		<!-- NAVBAR -->
 		<div class="navbar-fixed">
 			<!-- <ul id="quickFunctions" class="dropdown-content">
 					<li><a href="#!">Swap Duties</a></li>
@@ -40,6 +41,7 @@
 			<nav>
 				<div class="nav-wrapper <?php echo $base_color?> darken-1">
 					<a href="<?php echo $doc_root ?>/" class="brand-logo center">Duty Planner</a>
+					<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="left hide-on-med-and-down">
 						<li class="active"><a href="<?php echo $doc_root ?>/" class="waves-effect waves-light"><i class="material-icons">dashboard</i></a></li>
 						<li><a href="<?php echo $doc_root ?>/settings.php" class="waves-effect waves-light"><i class="material-icons">settings</i></a></li>
@@ -49,6 +51,14 @@
 				</div>
 			</nav>
 		</div>
+		
+		<ul class="sidenav" id="mobile-menu">
+			<li class="active"><a href="<?php echo $doc_root ?>/" class="waves-effect waves-light"><i class="material-icons">dashboard</i> Dashboard</a></li>
+			<li><a href="<?php echo $doc_root ?>/settings.php" class="waves-effect waves-light"><i class="material-icons">settings</i> Settings</a></li>
+			<!-- <li><a class="dropdown-trigger" href="#!" data-target="quickFunctions" class="waves-effect">Quick Functions<i class="material-icons right">arrow_drop_down</i></a></li> -->
+			<li><a href="<?php echo $doc_root ?>/logout.php" class="waves-effect waves-light"><i class="material-icons">exit_to_app</i> Logout</a></li>
+		</ul>
+		<!-- /NAVBAR -->
 
 		<div class="container" id="dashboard-wrap">
 			<h3>Dashboard <small class="right">[<?php echo $user ?>]</small></h3>
