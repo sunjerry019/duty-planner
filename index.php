@@ -18,7 +18,7 @@
 	<head>
 		<title>Duty Planner</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Hanalei+Fill&text=DutyPlanner" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&text=DUTYPLANNER" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Material+Icons|Nunito:300" rel="stylesheet">
 
 		<!-- Materialize CSS -->
@@ -35,7 +35,7 @@
 		<div class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper <?php echo $base_color?> darken-1">
-					<a href="<?php echo $doc_root ?>/" class="brand-logo center">Duty Planner</a>
+					<a href="<?php echo $doc_root ?>/" class="brand-logo center">DUTY PLANNER</a>
 					<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="left hide-on-med-and-down">
 						<li class="active"><a href="<?php echo $doc_root ?>/" class="waves-effect waves-light"><i class="material-icons">dashboard</i></a></li>

@@ -1,6 +1,6 @@
 .code	{ font-family: "Roboto Mono", monospace; font-size: smaller; }
 
-nav .brand-logo.center { font-family: 'Hanalei Fill', "Roboto", sans-serif; }
+nav .brand-logo.center { font-family: 'Josefin Sans', "Roboto", sans-serif; }
 .modal		{ transform: translateY(-50%) !important; }
 .cal_link 	{ background-color: #ddd; padding: 10px; }
 
